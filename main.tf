@@ -4,10 +4,10 @@ terraform {
 
 variable "subject" {
    type = string
-   default = "World"
+   default = "Moon"
    description = "Subject to hello"
 }
 
 output "hello_world" {
-  value = "Hello branch demo with source change, ${var.subject}!"
+  value = "Hello ${var.subject}, how are you!. This is a demo with dedicated repo for terraform"
 }
