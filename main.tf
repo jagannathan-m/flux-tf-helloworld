@@ -4,10 +4,16 @@ terraform {
 
 variable "subject" {
    type = string
-   default = "Moon"
+   default = "World"
+   description = "Subject to hello"
+}
+
+variable "version" {
+   type = string
+   default = "0.1.0"
    description = "Subject to hello"
 }
 
 output "hello_world" {
-  value = "Hello its ${var.subject}! Please get down. Next stop Mars"
+  value = "Hello ${var.subject}! I am version ${var.version}"
 }
