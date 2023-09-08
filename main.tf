@@ -8,12 +8,12 @@ variable "subject" {
    description = "Subject to hello"
 }
 
-variable "version" {
+variable "infra_version" {
    type = string
    default = "0.1.0"
    description = "Subject to hello"
 }
 
 output "hello_world" {
-  value = "Hello ${var.subject}! I am version ${var.version}"
+  value = "Hello ${var.subject}! I am version ${var.infra_version}"
 }
