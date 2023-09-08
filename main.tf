@@ -10,7 +10,7 @@ variable "subject" {
 
 variable "infra_version" {
    type = string
-   default = "0.3.0"
+   default = "0.4.0"
    description = "Subject to hello"
 }
 
